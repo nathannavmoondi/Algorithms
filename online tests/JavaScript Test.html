@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.tutorialsteacher.com/online-test/javascript-test1 -->
+<html class=" wqlswcjm idc0_343"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+
+     
+
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="color-scheme" content="dark light">
+    <title>JavaScript Test</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin="">
+    <link rel="preconnect" href="https://www.facebook.com/" crossorigin="">
+
+    <!--[if lt IE 9]>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link type="text/css" href="./JavaScript Test_files/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="./JavaScript Test_files/ttstyle.min.css" rel="stylesheet" type="text/css">
+    <meta property="og:url" content="https://www.tutorialsteacher.com/online-test/javascript-test1">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="JavaScript Test">
+    <meta property="og:image" content="https://www.tutorialsteacher.com/assets/images/fbshare.jpg">
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-33844821-5');
+    </script>
+
+    
+    <link type="text/css" rel="stylesheet" href="./JavaScript Test_files/test.min.css">
+
+        <link href="./JavaScript Test_files/prism-html-ts-js.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="phWrapper">
+        <script>
+    var currentTheme = localStorage.getItem("theme");
+    if (currentTheme == "dark") {
+        document.body.classList.toggle("dark-theme");
+    } 
+</script>
+<header class="phHeader" id="header">
+    <nav class="navbar navbar-expand logo-link">
+        <a class="navbar-brand text-uppercase" href="https://www.tutorialsteacher.com/">
+            
+            <img src="./JavaScript Test_files/logo.svg" alt="LOGO">
+            
+
+
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-flex-icons ml-auto">
+                <li class="followus">Follow Us</li>
+                <li class="nav-item">
+                    <a class="nav-link fb-icon" href="https://www.facebook.com/tutorialsteacher" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tw-icon" href="https://twitter.com/tutorialstchr" title="Twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+        
+<nav class="navbar navbar-expand navbar-dark special-color-dark topMenuHorizontal sticky-top">
+
+    <!-- Navbar brand -->
+    <!-- Collapse button -->
+    <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbarLeft" aria-controls="#navbarLeft" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="topMenu">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto left">
+            <li class="nav-item">
+                <a href="https://www.tutorialsteacher.com/" class="nav-link home-icon">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle no-caret" id="dropdownMenuForDotnet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    .NET
+                </a>
+                <div class="dropdown-menu singleSubMenu" aria-labelledby="dropdownMenuForDotnet">
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/csharp">C#</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/csharp/oop">C# OOP</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/core">ASP.NET Core</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/mvc">ASP.NET MVC</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/linq">LINQ</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/ioc">Inversion of Control</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/webapi">Web API</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle no-caret" id="dropdownMenuForJS" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    JavaScript
+                </a>
+                <div class="dropdown-menu singleSubMenu" aria-labelledby="dropdownMenuForJS">
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/javascript">JavaScript </a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/typescript">TypeScript</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/jquery">jQuery</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/angular">Angular 11</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/nodejs">Node.js</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/d3js">D3.js</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/sass">Sass</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle no-caret" id="dropdownMenuForProg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Programming
+                </a>
+                <div class="dropdown-menu singleSubMenu" aria-labelledby="dropdownMenuForProg">
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/python">Python</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/go">Go lang</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/https">HTTPS (SSL)</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/regex">Regex</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle no-caret" id="dropdownMenuForDB" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Database
+                </a>
+                <div class="dropdown-menu singleSubMenu" aria-labelledby="dropdownMenuForDB">
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/sql">SQL</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/sqlserver">SQL Server</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/postgresql">PostgreSQL</a>
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/mongodb">MongoDB</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle no-caret" id="dropdownMenuForAssess" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Assessment
+                </a>
+                <div class="dropdown-menu singleSubMenu" aria-labelledby="dropdownMenuFordropdownMenuForAssess">
+                    <a class="dropdown-item" href="https://www.tutorialsteacher.com/question-answer">MCQs</a>
+                    <a class="dropdown-item active" href="https://www.tutorialsteacher.com/online-test">Online Tests</a>
+                </div>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.tutorialsteacher.com/articles">Articles</a>
+            </li>
+            
+        </ul>
+
+        <!-- Links -->
+        <ul class="navbar-nav nav-flex right ml-auto">
+
+
+            <li class="nav-item">
+                <a class="nav-link bg-transparent text-white p-0 mr-3 ml-1" title="Dark/Light Theme" onclick="changepagetheme()" href="javascript:void(0);"><i class="demo-icon icon-adjust"></i></a>
+            </li>
+
+            
+        </ul>
+        <!-- Search form -->
+        <div id="wrap">
+
+            <form class="navbar-form" action="https://www.google.com/search" id="cse-search-box" role="search" target="_blank">
+                <div>
+                    <input type="hidden" name="cx" value="partner-pub-7448309248176309:9010588392">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <input type="text" name="q" id="q" placeholder="Search" class="form-control">
+                    <span class="input-group-btn">
+                        <button type="submit" id="search_submit" class="button-search border-0 bg-transparent text-white">
+                            <i class="fa fa-search">
+                            </i>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Collapsible content -->
+</nav>
+
+
+
+        <!--left Navbar-->
+        <nav class="navbar menuLeft p-0 navbar-expand-md">
+            <div class="collapse navbar-collapse" id="navbarLeft" style="top: 107px;">
+                <div class="menuVerticalParent" style="padding-top: 107px;">
+                    <ul class="menuVertical" id="leftmenu">
+                        
+                        <li class="menu-title" "="">
+                            .NET Tests
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/csharp-test">C#</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/mvc-test">ASP.NET MVC </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/aspnetcore-test">ASP.NET Core</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/linq-test">LINQ</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/ioc-test">IoC</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/webapi-test">Web API</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/wcf-test">WCF</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/dotnet-test">.NET Framework</a>
+                        </li>
+                        <li class="menu-title">
+                            JavaScript Tests
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/javascript-test">JavaScript</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/jquery-test">jQuery</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/typescript-test">TypeScript</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/nodejs-test">Node.js</a>
+                        </li>
+                        
+                        <li class="menu-title">
+                            Database Tests
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/sqlserver-test">SQL Server</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/mongodb-test">MongoDB</a>
+                        </li>
+                        <li class="menu-title">
+                            Programming Tests
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialsteacher.com/online-test/python-test">Python</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--/left Navbar-->
+        <section class="middleContent" id="middleContent">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 pr-md-0 col-lg-12 col-xl-8">
+                        <!--<div class="lb-ad mt-2">-->
+                            
+                        <!--</div>-->
+                        <hr class="d-md-none d-sm-block d-lg-node d-xl-block d-xs-block m-0">
+
+                            <div class="row mt-3">
+                                <div class="col-md-6"><h1 style="font-size:26px; font-weight:500;margin:0">JavaScript Test</h1></div>
+                                <div class="col-md-6 timer text-right pt-3 d-none" id="timer">Time: 00:00</div>
+                            </div>
+                        <div class="text-center bordered mt-2" id="result">
+                            <div class="result">
+                                <p>Opps! You gave 7 correct answers out of 20 questions in 00:36 minutes.<br> You really need to work hard to become an expert.</p>
+                            </div>
+                            <button id="showans" class="btn nav-btn mb-3 rounded-0" style="width:190px">Check Your Answers</button>
+                            <button id="tryagain" class="btn nav-btn mb-3 rounded-0"><i class="fa fa-repeat ml-1"></i> Try Again</button>
+                        </div>
+                        <div style="min-height:350px">
+                            
+
+
+<article class="" style="">
+    <div class="card mcq-card rounded-0" data-copt="2">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 1: JavaScript is ECMAScript</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0 selected-option correct-test-answer" data-opval="2">True</label>
+                </li>
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0" data-opval="1">False</label>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="2">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 2: JavaScript written under which of the following tag?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>JavaScript</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>JavaScript</span><span class="token punctuation">&gt;</span></span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0 correct" data-opval="2"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span></code></label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="4">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 3: A variable in JavaScript declared with which of the following keyword?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1">new</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2">int</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3">string</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0 correct" data-opval="4">var</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="4">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 4: Which of the followings are primitive data types in JavaScript?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1">String</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2">Number</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3">Boolean</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0 correct" data-opval="4">All of the above</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="3">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 5: Which of the following is NOT a JavaScript object?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1"><code class=" language-javascript"><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span></code></label>
+                </li>
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2"><code class=" language-javascript"><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">"Steve"</span><span class="token punctuation">}</span><span class="token punctuation">;</span></code></label>
+                </li>
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0 correct" data-opval="3"><code class=" language-javascript"><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> name <span class="token operator">=</span> <span class="token string">"Steve"</span><span class="token punctuation">}</span><span class="token punctuation">;</span></code></label>
+                </li>
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4"><code class=" language-javascript"><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></label>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="3">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 6: Which of the following is NOT a correct way of declaring an array in JavaScript?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1"><code class=" language-javascript"><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"two"</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token punctuation">,</span> <span class="token number">4</span> <span class="token punctuation">]</span><span class="token punctuation">;</span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2"><code class=" language-javascript"><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0 correct" data-opval="3"><code class=" language-javascript"><span class="token keyword">var</span><span class="token punctuation">[</span><span class="token punctuation">]</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">None of the above</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="2">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 7: What is null in JavaScript?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1">Null means empty string value.</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0 correct" data-opval="2">Null means absence of a value.</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3">Null means unknown value.</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">Null means zero value.</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="2">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 8: Which of the following is a valid JavaScript function?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1"><code class=" language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">myFunc</span> <span class="token operator">=</span> <span class="token keyword">function</span> myFunc<span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">;</span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0 correct" data-opval="2"><code class=" language-javascript"><span class="token keyword">function</span> <span class="token function">myFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token punctuation">}</span><span class="token punctuation">;</span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3"><code class=" language-javascript">myFunc <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token punctuation">}</span><span class="token punctuation">;</span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4"><code class=" language-javascript"><span class="token keyword">function</span> myFunc <span class="token operator">=</span> <span class="token punctuation">{</span>  <span class="token punctuation">}</span><span class="token punctuation">;</span></code></label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="2">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 9: Which of the following object represent parameters of current function inside any function?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1">Global</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0 correct" data-opval="2">arguments</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3">this</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">Object</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="1">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 10: A function can be assigned to a variable in JavaScript.</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option correct-test-answer" data-opval="1">True</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2">False</label>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="1">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 11: Which of the following is an example of anonymous function in JavaScript?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option correct-test-answer" data-opval="1"><code class=" language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">myFunc</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token punctuation">}</span><span class="token punctuation">;</span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2"><code class=" language-javascript"><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token punctuation">}</span><span class="token punctuation">;</span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3"><code class=" language-javascript"><span class="token keyword">var</span> myFunc <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token punctuation">}</span><span class="token punctuation">;</span></code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">All of the above.</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="1">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 12: What will <code>1 == "1"</code> return?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option correct-test-answer" data-opval="1">True</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2">False</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3">0</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">1</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="1">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 13: What is <code>eval()</code> in JavaScript?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option correct-test-answer" data-opval="1">It executes specified string as JavaScript code.</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2">It returns an object representing the parsed tree of the specified JavaScript code.</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3">It executes server side code in JavaScript.</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">It displays popup message.</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="4">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 14: How to handle error in JavaScript?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1">By writing error proof code.</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2">By using the <code>eval()</code> function.</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3">By using if-else block</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0 correct" data-opval="4">By using try, catch &amp; finally block.</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="3">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 15: How to apply strict mode in JavaScript?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1">"strict mode"</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2">"strict"</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0 correct" data-opval="3">"use strict"</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">"apply strict"</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="2">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 16: A variable declared without var keyword inside a function will become _______ variable.</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1">local</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0 correct" data-opval="2">global</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3">block</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">undefined</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="3">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 17: Which of the following is not a valid keyword in JavaScript?</p><ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1">function</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2">this</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0 correct" data-opval="3">module</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">try</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="1">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 18: What will be the output of the following JavaScript code?</p><pre class=" language-javascript" tabindex="0"><code class=" language-javascript">x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'x = '</span> <span class="token operator">+</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> x<span class="token punctuation">;</span>
+</code></pre>
+
+            <ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option correct-test-answer" data-opval="1"><code>x = 1</code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2"><code>error: x is undefined</code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3"><code>x = undefined</code></label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4"><code>x = null;</code></label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="3">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 19: What will be the output of the following JavaScript code?</p><pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> x <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> x<span class="token operator">++</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+
+            <ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option wrong-test-answer" data-opval="1">11111</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2">12345</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0 correct" data-opval="3">1234</label>
+                </li>
+
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">5555</label>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <div class="card mcq-card rounded-0" data-copt="1">
+        <div class="card-body pt-0 pb-2">
+            <p>Question 20: What will be the output of the following JavaScript code?</p><pre class=" language-javascript" tabindex="0"><code class=" language-javascript"><span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">do</span><span class="token punctuation">{</span> 
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> 
+<span class="token punctuation">}</span><span class="token keyword">while</span><span class="token punctuation">(</span>x <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre>
+
+            <ul id="options" class="col-xs-12">
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionA rounded-0 selected-option correct-test-answer" data-opval="1">0</label>
+                </li>
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionB rounded-0" data-opval="2">null</label>
+                </li>
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionC rounded-0" data-opval="3">1</label>
+                </li>
+                <li class="input-group border mb-2 ">
+                    
+                    <label class="form-control option-label-radio optionD rounded-0" data-opval="4">No output</label>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+
+</article>
+
+                                <div class="row mb-4">
+                                    <div class="col-6 text-left">
+                                        <button id="prev" class="btn nav-btn rounded-0 d-none"><i class="fa fa-angle-left mr-1"></i> Previous</button>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <button id="finish" class="btn btn-success rounded-0 d-none">Finish <i class="fa fa-thumbs-up ml-1"></i></button>
+                                        <button id="next" class="btn nav-btn rounded-0 d-none">Next <i class="fa fa-angle-right ml-1"></i></button>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        
+<div class="videoAd"> 
+<script type="text/javascript" language="javascript" src="./JavaScript Test_files/liveView.php"></script>
+</div>
+                    </div>
+                    
+                    <div class="d-none d-xl-block col-xl-4 rightSidebar">
+                        <div class="row">
+                            <div class="col-12">
+                                
+                                <div class="rect-ad2 mt-2 ml-2" id="stickyAdDiv">
+                                    <div id="124470-3">
+                                        <script src="./JavaScript Test_files/gen.js.download"></script>
+                                        <script src="./JavaScript Test_files/requestform.js.download"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="section footer pt-5">
+    <div class="footer-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="edugate-widget widget">
+                        <div class="title-widget">TutorialsTeacher.com</div>
+                        <div class="content-widget">
+                            <p>
+                                TutorialsTeacher.com is your authoritative source for comprehensive technologies tutorials, tailored to guide you through mastering various web and other technologies through a step-by-step approach. 
+                                
+                            </p>
+                            <p>
+                                Our content helps you to learn technologies easily and quickly for learners of all levels. By accessing this platform, you acknowledge that you have reviewed and consented to abide by our <a href="https://www.tutorialsteacher.com/aboutus/terms-of-use">Terms of Use</a> and <a href="https://www.tutorialsteacher.com/aboutus/privacy-policy">Privacy Policy</a>, designed to safeguard your experience and privacy rights.
+                            </p>
+                           
+                            
+                            <div class="info-list">
+                                <ul class="list-unstyled">
+                                    
+                                    <li><i class="fa fa-envelope-o"></i>contact@tutorialsteacher.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="mailing-widget widget">
+                                <div class="title-widget">E-mail list</div>
+                                <div class="content-wiget">
+                                    <p>
+                                        Subscribe to TutorialsTeacher email list and get latest updates, tips &amp;
+                                        tricks on C#, .Net, JavaScript, jQuery, AngularJS, Node.js to your inbox.
+                                    </p>
+                                    <form action="https://tutorialsteacher.us13.list-manage.com/subscribe/post-json?u=78cbe5cadd7cc1475359445ad&amp;id=d119ae6be2" method="post" id="subscribe-form" name="subscribe-form" class="validate" novalidate="">
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Email address" class="form-control form-email-widget" name="MERGE0" id="MERGE0" size="25"><span class="input-group-btn"><input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe" class="btn btn-email"></span>
+                                        </div>
+
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display: none"></div>
+                                            <div class="response" id="mce-success-response" style="display: none"></div>
+                                        </div>
+                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                            <input type="text" name="b_659e2cbd2829799e7dc94ae35_93dae2ea03" tabindex="-1" value="">
+                                        </div>
+                                        <div class="alert-success" id="successMsg"></div>
+                                        <div class="alert-danger" id="failMsg"></div>
+
+                                    </form>
+                                    <p>We respect your privacy.</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row hyperlink text-center text-md-left">
+                <div class="col-md-6 hyper-left">
+                    <ul class="list-inline">
+                        
+                        <li class="list-inline-item"><a href="https://www.tutorialsteacher.com/aboutus">ABOUT US</a></li>
+                        <li class="list-inline-item"><a href="https://www.tutorialsteacher.com/aboutus/terms-of-use">TERMS OF USE</a></li>
+                        <li class="list-inline-item"><a href="https://www.tutorialsteacher.com/aboutus/privacy-policy">PRIVACY POLICY</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-6 hyper-right text-center text-md-right">
+                    <i class="fa fa-copyright" aria-hidden="true"></i> 2024 TutorialsTeacher.com. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
+        </section>
+    </div>
+    <script src="./JavaScript Test_files/jquery.min.js.download"></script>
+<script src="./JavaScript Test_files/ttGeneralScript.min.js.download"></script>
+<script>window.jQuery||LoadScriptAtEnd("/Content/scripts/jquery-3.3.1.min.js");</script>
+<script type="text/javascript">
+screen.width>556&&$(".copy-btn").length>0&&LoadAndRegisterClipboard(),$(".lazyload").length>0&&LoadScriptAtEnd("/Content/scripts/lazysizes.min.js");
+</script>
+<script src="./JavaScript Test_files/popper.min.js.download"></script>
+<script>window.Popper||LoadScriptAtEnd("/Content/scripts/popper.min.js");</script>
+<script src="./JavaScript Test_files/jquery.unobtrusive-ajax.min.js.download"></script>
+<script src="./JavaScript Test_files/bootstrap.min.js.download"></script>
+<script>$.fn.modal||LoadScriptAtEnd("/Content/scripts/bootstrap.min.js");</script>
+<script>
+function setActiveLeftMenu(){var e='Index'.replace(/_/g,"-");e=e.replace("asp-net","asp.net");var t='online_test'.replace(/_/g,"-");0==$('#leftmenu li a[href="/'+t+"/"+e+'"]').length?$('#leftmenu li a[href="/'+t+'"]').addClass("active"):$('#leftmenu li a[href="/'+t+"/"+e+'"]').addClass("active"),$('#topMenu > ul li a[href *="/'+t.toLowerCase()+'"]').addClass("active")}function setLeftArticleMenuActive(){if($(".menuVertical").length>0){var e=$(location).attr("pathname");$('.menuVertical li a[href="'+e+'"]').addClass("active")}}$(document).ready(function(){stickTLMenus(),screen.width<=767?$(window).scroll(function(){stickTLMenus(),stickyAd()}):screen.width>767&&screen.width<=1199?($(window).scroll(function(){stickTLMenus()}),setActiveLeftMenu(),maintainLeftMenuPos()):(stickyAd(),$(window).scroll(function(){stickTLMenus(),stickyAd()}),setActiveLeftMenu(),setLeftArticleMenuActive(),maintainLeftMenuPos()),window.setArticleTagActive&&setArticleTagActive(),registerSubscribeButton()});
+</script>
+
+    <script src="./JavaScript Test_files/test.min.js.download"></script>
+
+        <script src="./JavaScript Test_files/prism-html-ts-js.js.download"></script>
+    <script>
+        function setActiveLeftMenu() {
+            $('#leftmenu li a[href="' + window.location.pathname + '"]').addClass('active')
+            $('#topMenu > ul li a[href ="/online-test"]').addClass('active')
+        }
+    </script>
+
+
+</body></html>
