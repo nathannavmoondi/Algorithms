@@ -35,6 +35,7 @@ public static class Anagrams{
         //dictionary of each letter and how many times it appears
         Dictionary<char, int> charCount = new Dictionary<char, int>();
 
+        //build map
         //add to dict 1 by 1
         foreach (char c in str1)
         {
@@ -54,7 +55,7 @@ public static class Anagrams{
        //work on other string, reducing char count each time encountered
        foreach (char c in str2)
         {
-            if (char.IsLetter(c))
+            if (char.IsLetter(c)) //tip: just use onlyAlpha() above
             {
                 if (charCount.ContainsKey(c))
                 {
@@ -73,6 +74,27 @@ public static class Anagrams{
 
         //if all chars removed from other string, both are anagrams
         return charCount.Count == 0;
+    }
+
+    public static Dictionary<char, int> buildMap(string t) //can use this also
+    {
+        Dictionary<char, int> map = new Dictionary<char, int>();
+
+        foreach (var c in t)
+        {
+            if (char.IsLetter(c))
+            {
+                if (map.ContainsKey(c))
+                {
+                    map[c]++;
+                }
+                else
+                {
+                    map[c] = 1;
+                }
+            }
+        }
+        return map;
     }
 
     //another solution
