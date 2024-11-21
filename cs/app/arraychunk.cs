@@ -42,7 +42,7 @@ public static class ArrayChunk{
             chunk.Add(i);
             if (chunk.Count == size) //array is at chunk size, add
             {
-                chunked.Add(chunk.ToArray()); //adding array not list
+                chunked.Add(chunk.ToArray()); //adding array not list. convert list of int to array of int
                 chunk.Clear();
             }
             count++;

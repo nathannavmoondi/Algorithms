@@ -14,6 +14,16 @@ public static class Anagrams{
 
     public static bool AreAnagrams(string str1, string str2)
     {
+        //int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+        //int[] x = { 1, 2, 3 };
+        //int[] numbers2 = { 1, 2, 3, 4 };
+
+        //var numbers3 = new List<int> { 1, 2, 3, 5, 4 };
+        //List<int> num4 = new List<int> { 1, 2, 3, 5, 4 };
+
+        //if (numbers.Contains(4))
+        //    Console.WriteLine("Array contains 4");
+
         //first compare same size
         if (str1.Length != str2.Length)
         {
@@ -63,6 +73,42 @@ public static class Anagrams{
 
         //if all chars removed from other string, both are anagrams
         return charCount.Count == 0;
+    }
+
+    //another solution
+    public static bool isAnagram(string first, string second)
+    {
+
+        var temp = onlyAlpha(second);
+        var tempfirst = onlyAlpha(first);
+        if (tempfirst.Length != temp.Length)
+            return false;
+        foreach (var c in tempfirst)
+        {
+            if (temp.Contains(c))
+            {
+                var pos = temp.IndexOf(c);
+                temp = temp.Substring(0, pos) + temp.Substring(pos + 1);
+            }
+            else
+                return false;
+        }
+
+        return true;
+    }
+
+    public static string onlyAlpha(string t)
+    {
+        var result = "";
+        foreach (var c in t)
+        {
+            if (char.IsLetter(c))
+            {
+                result += c;
+            }
+        }
+        return result.ToUpper();
+
     }
 
 }

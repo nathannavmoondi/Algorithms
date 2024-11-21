@@ -10,6 +10,7 @@ public static class ReverseInt
 
         var str = n.ToString().ToCharArray().Reverse().ToString();
 
+        if (str == null) return 0;
         var num = int.Parse(str);
         if (n < 0) num *= -1;
         return num;
@@ -26,13 +27,17 @@ public static class ReverseInt
 
         //or make absolute
         //convert to string
-        //reverse string
+        //conver to char array
+        //reverse array
+        //convert back to string
+        //convert to int
+        //check for less than 0 and multiply by -1 if so.
         var input = Math.Abs(n);
 
         char[] array = input.ToString().ToCharArray();
         Array.Reverse(array); Console.WriteLine(array);
         var str = new String(array);
-         var num = int.Parse(str);
+        var num = int.Parse(str);
         if (n < 0) num *= -1;
         Console.WriteLine($"reversed {n} is {num}");
         return num;

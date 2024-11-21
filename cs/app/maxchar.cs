@@ -32,7 +32,7 @@ public static class MaxChar
             }
         }
 
-        //which is largest value in this dictionary
+        //which is largest value in this dictionary. Compare each value to each other
         char mostCommonChar = charCount.Aggregate((x, y) => x.Value > y.Value ? x : y).Key; //returns keyvalue pair object
 
         //or

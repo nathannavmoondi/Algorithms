@@ -32,7 +32,6 @@ using System.Collections.Generic;
 public static class Permutation
 {
    
-
         public static bool IsPermutation(int[] A)
         {
 

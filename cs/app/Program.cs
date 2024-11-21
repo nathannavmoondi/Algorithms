@@ -10,6 +10,10 @@ namespace scratchcsharp
     {
         static void Main(string[] args)
         {
+
+            var chain = new ChainLinkAnswer();
+            chain.Main3();
+            TestDomeSherwebTest.Main2();
  
             MyDictionary<string, int> myDictionary = new MyDictionary<string, int>();
             myDictionary.Add("a", 1);
@@ -22,6 +26,10 @@ namespace scratchcsharp
             var arr1 = ArrayChunk.ChunkArray([1, 2, 3, 4], 2);
             var arr2 = ArrayChunk.ChunkArray2([1, 2, 3, 4, 5], 2);
             Console.WriteLine(arr2.Count());
+
+            Console.WriteLine("Anagram 1 result is " + Anagrams.isAnagram("rail safety", "fairy tales")); //true
+            Console.WriteLine("Anagram 2 result is " + Anagrams.isAnagram("RAIL! SAFETY!", "fairy tales")); //true
+            Console.WriteLine("Anagram 3 result is " + Anagrams.isAnagram("RAIL! SAFETY!", "fairy tafles")); //false
 
             Console.WriteLine(BiggestNum.SumOfTwoLargest([3, 17, 8, -20, 0])); //25
             Console.WriteLine(BinaryGap.LongestBinaryGap(9)); //2
@@ -39,9 +47,15 @@ namespace scratchcsharp
             Wordconstructioncheck.Run();
             Console.WriteLine("Word construction check end");
 
-            var ret = IsBalanced.IsBalancedFormula("(3+5)*(2-4)");
+            var ret = TestDome.IsBalanced("(3+5)*(2-4)");
             Console.WriteLine($"Balanced = {ret}");
+            ret = TestDome.IsBalanced("(3+5)*(2-4))");
+            Console.WriteLine($"Balanced = {ret}");
+             
+            var r = TestDome.GetDiscountedPrice(12, 100, TestDome.DiscountType.Weight);
+            Console.WriteLine($"Discounted price = {r}");
 
+            
         }
     }
 }
